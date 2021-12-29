@@ -8,7 +8,15 @@ if(isset($_SESSION['email']))
      $result =mysqli_query($conn,$query);
      $rows= mysqli_fetch_array($result);
      
+
+
 }
+
+else {
+    header('location:login.php');
+}
+
+
 ?>
 
     
